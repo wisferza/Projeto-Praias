@@ -1,0 +1,82 @@
+/*id do elemento: <p id="descrição"> </p>*/
+/*classe do elemento: <a class="itemmenu"> </a>*/
+/*body {//colocamos os atributos que queremos modificar;}*/
+/*#descricaovaga {//atributos;}*/
+/*.itemmenu {//atributos;}*/
+/*Abaixo estilizamos o nosso logotipo por meio do id, sempre quando estilizamos um elemento pelo id, precisamos colocar o # antes do nome*/
+/* no html:<h1> <h1/> ; no css: h1{ color: blue;}*/
+/* no html:<h1 id="trabalheConosco"> </h1> ; no css: #trabalheConosco {color: red;}*/
+/* no html:<h1 class="titulosDoSite"> </h1> ; no css: .titulosDoSite {color: pink;}*/
+/* no html "<br>" pula uma linha*/
+/* no html "<hr>" cria uma linha*/
+/*:hover para mudar cor de texto quando se passar o mouse por cima (fulano:hover) ou para alternar entre imagens quando se passar o mouse por cima (img:hover)*/
+#logo {
+    border-radius: 50%;/*Transforma os cantos da imagem em cantos curvos, arredondando a imagem*/
+    width: 5%; /*Modifica a largura do elemento*/
+    height: 10%; /*Modifica a largura e altura do elemento*/
+}
+/*Abaixo estamos modificando todos os elementos do body que é o corpo da nossa página, sempre que queremos estilizar um elemento pelo seu nome, colocamos apnas o nome do elemento seguido das chaves{}*/
+body{
+    /*Estiliza o fundo na nossa página aplicando uma cor*/
+    background-color: antiquewhite;
+    /*Modifica a fonte da letra do meu docmento*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+/*abaixo estilizamos dois elementos do html ao mesmo tempo, usamos esta técnica quando ambos possuem as mesmas característias para modificção, sempre devemos lembrar de separar os elementos por vírgula(,)*/
+img,video {
+    width: 500px;
+    height: 400px;
+}
+
+hr{
+    border: 1px solid;/*Define a largura e o tipo de borda*/
+    border-color: sandybrown; /*define a cor d borda*/
+    width: 35%;
+}
+
+/*abaixo estamos estilizando o ícone por meio da classe do comando usando o ponto (.) antes do nome*/
+.icone {
+    border-radius: 50%; /*arredonda as bordas do meu elemento*/
+    width: 5%;
+    height: 5%
+}
+/*estilizando o elemento pelo nome do comando*/
+section {
+    border: 1px solid;
+    border-color: sandybrown;
+    margin: 5%; /*Define o espaço entre o limite da página web e os elementos contidos nela*/
+    padding: 2%; /*Define o espaço entre o conteúdo do site e o elemento em que ele está contido*/
+}
+
+.ladoalado {
+    display: flex; /*usa um layout flexível para alinhar os elementos*/
+    align-items: center; /*Alinhamento verticaal dos itens*/
+    justify-content: center; /*alinhamento horizontal dos itens*/
+    gap: 1rem; /* espaço entre os elementos*/
+}
+
+.ladoalado2 {
+    width: 100%;
+    background-color: sandybrown;
+    display: flex; /*usa um layout flexível para alinhar os elementos*/
+    position:fixed; /*fixa uma posição*/
+    z-index: 1;
+    align-items: center; /*Alinhamento verticaal dos itens*/
+    gap: 1rem; /* espaço entre os elementos*/
+}
+
+.menu-item{
+    text-decoration: none; /*retira o traço abaixo do link*/
+    color:black;
+    font-weight: bold; /* Define o texto como negrito */
+    gap:10px;  
+}
+
+.menu-item:hover{
+    font-size: 18px;
+    color: white;
+}
+
+#inicio{
+    margin-top: 0px;
+}
